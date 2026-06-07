@@ -40,7 +40,7 @@ bibliography: paper.bib
 
 # Summary
 
-ComProScanner is an open-source Python package that automates the extraction of composition--property data from materials science literature, operating as a fully end-to-end pipeline from literature search to structured database construction without human intervention, provided publisher Text and Data Mining (TDM) API keys are supplied. Building on the previously introduced ComProScanner framework [@roy2025comproscanner], this release extends it with native vision language model (VLM)-based figure extraction, enabling the recovery of composition-property pairs from scientific charts and plots embedded in journal articles. giving users the flexibility to configure any LiteLLM-compatible model for both text extraction and figure interpretation.
+ComProScanner is an open-source Python package that automates the extraction of composition--property data from materials science literature, operating as a fully end-to-end pipeline from literature search to structured database construction without human intervention, provided publisher Text and Data Mining (TDM) API keys are supplied. Building on the previously introduced ComProScanner framework [@roy2026comproscanner], this release extends it with native vision language model (VLM)-based figure extraction, enabling the recovery of composition-property pairs from scientific charts and plots embedded in journal articles. giving users the flexibility to configure any LiteLLM-compatible model for both text extraction and figure interpretation.
 
 # Statement of need
 
