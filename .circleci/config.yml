@@ -153,6 +153,9 @@ jobs:
           paths:
             - src
             - paper
+      - store_artifacts:
+          path: /tmp/paper
+          destination: paper
 
   manifest:
     <<: *defaults
