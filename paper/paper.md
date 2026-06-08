@@ -48,7 +48,7 @@ A substantial fraction of quantitative composition-property data such as piezoel
 
 # State of the field
 
-Automated extraction of materials data from scientific literature has progressed considerably over the past decade, from rule-based and named entity recognition approaches [@swain2016chemdataextractor,@mavracic2021chemdataextractor2] to LLM-based pipelines employing prompt engineering [@Dagdelen:2024,@polak2024chatextract] and multi-agent orchestration [@ansari2024eunomia,@ghosh2026automated].
+Automated extraction of materials data from scientific literature has progressed considerably over the past decade, from rule-based and named entity recognition approaches [@swain2016chemdataextractor],[@mavracic2021chemdataextractor2] to LLM-based pipelines employing prompt engineering [@Dagdelen:2024],[@polak2024chatextract] and multi-agent orchestration [@ansari2024eunomia],[@ghosh2026automated].
 
 # Experiment Container Usage
 
