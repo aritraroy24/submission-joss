@@ -57,6 +57,6 @@ The VLM extension introduces two principal components into the existing ComProSc
 
 # Research impact statement
 
-To evaluate the capability of cost-effective VLMs for composition-property extraction from scientific figures, four VLMs were benchmarked on 50 piezoelectric ceramic articles from the established $d_{33}$ test corpus described in our previous paper [@roy2026comproscanner].
+To evaluate the capability of cost-effective VLMs for composition-property extraction from scientific figures, four VLMs were benchmarked on 50 piezoelectric ceramic articles from the established d33 test corpus described in our previous paper [@roy2026comproscanner].
 
 # References
