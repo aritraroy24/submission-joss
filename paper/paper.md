@@ -48,7 +48,7 @@ A substantial fraction of quantitative composition-property data such as piezoel
 
 # State of the field
 
-Automated extraction of materials data from scientific literature has progressed considerably over the past decade, from rule-based and named entity recognition approaches [@swain2016chemdataextractor],[@mavracic2021chemdataextractor2] to LLM-based pipelines employing prompt engineering [@dagdelen2024structured],[@polak2024chatextract] and multi-agent orchestration [@ansari2024eunomia],[@ghosh2026automated]. However, virtually all existing frameworks operate exclusively on text and tables. The closest multimodal comparator in the materials domain is nanoMINER [@odobesku2025nanominer], which combines YOLO-based visual detection with GPT-4o for nanomaterials information extraction; however, it requires manual article provision and does not offer automated publisher access. On the chart understanding side, models such as DePlot [@liu2023deplot] and MatCha [@liu2023matcha] have demonstrated strong zero-shot performance on general chart comprehension tasks, whilst Zheng et al. [@zheng2024reticular] and PlotExtract [@plotextract2025] have shown that VLMs can extract quantitative data from chemistry and materials figures with high accuracy. ComProScanner is the first framework to integrate VLM-based figure extraction as a native, configurable component of a fully automated, publisher-integrated, materials-specific composition-property extraction pipeline.
+Automated extraction of materials data from scientific literature has progressed considerably over the past decade, from rule-based and named entity recognition approaches [@swain2016chemdataextractor],[@mavracic2021chemdataextractor2] to LLM-based pipelines employing prompt engineering [@dagdelen2024structured,@polak2024chatextract] and multi-agent orchestration [@ansari2024eunomia,@ghosh2026automated]. However, virtually all existing frameworks operate exclusively on text and tables. The closest multimodal comparator in the materials domain is nanoMINER [@odobesku2025nanominer], which combines YOLO-based visual detection with GPT-4o for nanomaterials information extraction; however, it requires manual article provision and does not offer automated publisher access. On the chart understanding side, models such as DePlot [@liu2023deplot] and MatCha [@liu2023matcha] have demonstrated strong zero-shot performance on general chart comprehension tasks, whilst Zheng et al. [@zheng2024reticular] and PlotExtract [@plotextract2025] have shown that VLMs can extract quantitative data from chemistry and materials figures with high accuracy. ComProScanner is the first framework to integrate VLM-based figure extraction as a native, configurable component of a fully automated, publisher-integrated, materials-specific composition-property extraction pipeline.
 
 # Software design
 
@@ -64,7 +64,8 @@ To evaluate the capability of cost-effective VLMs for composition-property extra
 
 # AI Usage Disclosure
 
-Language models were used for writing assistance during the preparation of this manuscript.
+The core software architecture was designed by the authors without the use of generative AI. However, Claude Code (Sonnet 4.6) has been used for refactoring, debugging and limited generation of boilerplate code, some tests and documentation. No AI generated content has been accepted without review and testing, nor does it constitute the majority of the work produced. Finally, Claude Sonnet 4.6 was used to suggest
+edits for clarity and structure, but was not used to generate the contents or sections while writing the paper.
 
 # Author Contributions
 
