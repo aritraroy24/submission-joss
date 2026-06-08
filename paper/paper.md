@@ -58,6 +58,20 @@ The VLM extension introduces two principal components into the existing ComProSc
 
 # Research impact statement
 
-To evaluate the capability of cost-effective VLMs for composition-property extraction from scientific figures, four VLMs were benchmarked on 50 piezoelectric ceramic articles from the established $d_{33}$ test corpus described in our previous paper [@roy2026comproscanner].
+To evaluate the capability of cost-effective VLMs for composition-property extraction from scientific figures, four VLMs were benchmarked on 50 piezoelectric ceramic articles from the established $d_{33}$ test corpus described in our previous paper [@roy2026comproscanner]. Models were selected from the LMArena VLM Leaderboard (Diagram category) [@chiang2024arena] using simultaneous criteria of an Arena ELO score of at least 1,250 and an input cost below $\$1.50$ per million tokens, yielding Gemini-3-Flash-Preview[@gemini3flash], Gemini-2.5-Pro [@comanici2025gemini25], GPT-5-Chat-Latest [@singh2026openaigpt5card], and GPT-5.1 [@openai2026gpt51]. Evaluation was performed on the composition*property_values field using the ComProScanner semantic evaluator with range-based value error thresholds of $\pm$0.5, $\pm$1, and $\pm$2 pC/N applied across different value ranges. Gemini-3-Flash-Preview achieved the highest performance across all metrics, with a composition accuracy of 0.97 and a normalised F1 score of 0.97, whilst simultaneously commanding the lowest input cost among the evaluated models. These results, summarised in \_Figure 2*, motivate its adoption as the default VLM for the GraphExtractorTool. The ComProScanner package is associated with well tested functionality using pytest and comprehensive API documentation at https://slimeslab.github.io/ComProScanner under the MIT License.
+
+![Confusion matrix from semantic evaluation with 1.0 threshold for composition-property data, showcasing all 7 evaluation parameters, such as weight-based composition accuracy, classification metrics (precision, recall and F1-score) and normalised classification metrics (normalised precision, normalised recall and normalised F1-score), across 4 different VLMs used in this study.](img/vlm_model_comparison_confusion_matrix.png){#benchmark width=95%}
+
+# AI Usage Disclosure
+
+Language models were used for writing assistance during the preparation of this manuscript.
+
+# Author Contributions
+
+AR: conceptualisation, software, data curation, formal analysis, investigation, methodology, validation, writing - original draft. EG: resources, supervision. JB: conceptualisation, formal analysis, funding acquisition, investigation, resources, validation, writing - review & editing, supervision. CG: conceptualisation, formal analysis, funding acquisition, investigation, resources, validation, writing - review & editing, supervision.
+
+# Acknowledgements
+
+AR and JB thank London South Bank University for financial and legal support in obtaining Elsevier, Wiley, and Springer Nature publisher TDM licences. CG thanks King's College London for legal support in obtaining IOP Publishing's TDM licence. CG was supported by the EPSRC through a New Investigator Award [grant number UKRI132].
 
 # References
